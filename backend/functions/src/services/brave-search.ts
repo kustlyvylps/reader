@@ -1,11 +1,6 @@
 import { AsyncService, AutoCastable, DownstreamServiceFailureError, Prop, RPC_CALL_ENVIRONMENT, delay, marshalErrorLike } from 'civkit';
 import { singleton } from 'tsyringe';
-import { Logger } from '../shared/services/logger';
-import { SecretExposer } from '../shared/services/secrets';
-import { BraveSearchHTTP, WebSearchQueryParams } from '../shared/3rd-party/brave-search';
 import { GEOIP_SUPPORTED_LANGUAGES, GeoIPService } from './geoip';
-import { AsyncContext } from '../shared';
-import { WebSearchOptionalHeaderOptions } from '../shared/3rd-party/brave-types';
 import type { Request, Response } from 'express';
 
 @singleton()
