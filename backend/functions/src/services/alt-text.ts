@@ -1,8 +1,5 @@
 import { AssertionFailureError, AsyncService, HashManager } from 'civkit';
 import { singleton } from 'tsyringe';
-import { Logger } from '../shared/services/logger';
-import { CanvasService } from '../shared/services/canvas';
-import { ImageInterrogationManager } from '../shared/services/common-iminterrogate';
 import { ImgBrief } from './puppeteer';
 import { ImgAlt } from '../db/img-alt';
 
