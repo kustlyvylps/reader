@@ -3,10 +3,8 @@ import { singleton } from 'tsyringe';
 import _ from 'lodash';
 import { TextItem } from 'pdfjs-dist/types/src/display/api';
 import { AsyncService, HashManager } from 'civkit';
-import { Logger } from '../shared/services/logger';
 import { PDFContent } from '../db/pdf';
 import dayjs from 'dayjs';
-import { FirebaseStorageBucketControl } from '../shared';
 import { randomUUID } from 'crypto';
 import { PDFDocumentLoadingTask } from 'pdfjs-dist';
 const utc = require('dayjs/plugin/utc');  // Import the UTC plugin
