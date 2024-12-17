@@ -2,7 +2,6 @@ import os from 'os';
 import fs from 'fs';
 import { container, singleton } from 'tsyringe';
 import { AsyncService, Defer, marshalErrorLike, AssertionFailureError, delay, Deferred, perNextTick, ParamValidationError } from 'civkit';
-import { Logger } from '../shared/services/logger';
 
 import type { Browser, CookieParam, GoToOptions, HTTPResponse, Page } from 'puppeteer';
 import type { Cookie } from 'set-cookie-parser';
@@ -10,7 +9,6 @@ import puppeteer from 'puppeteer-extra';
 
 import puppeteerBlockResources from 'puppeteer-extra-plugin-block-resources';
 import puppeteerPageProxy from 'puppeteer-extra-plugin-page-proxy';
-import { SecurityCompromiseError, ServiceCrashedError, ServiceNodeResourceDrainError } from '../shared/lib/errors';
 import { TimeoutError } from 'puppeteer';
 import _ from 'lodash';
 import { isIP } from 'net';
