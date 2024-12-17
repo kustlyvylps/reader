@@ -5,20 +5,14 @@ import {
 } from 'civkit';
 import { singleton } from 'tsyringe';
 import { AsyncContext, CloudHTTPv2, Ctx, FirebaseStorageBucketControl, InsufficientBalanceError, Logger, OutputServerEventStream, RPCReflect, SecurityCompromiseError } from '../shared';
-import { RateLimitControl, RateLimitDesc } from '../shared/services/rate-limit';
 import _ from 'lodash';
 import { PageSnapshot, PuppeteerControl, ScrappingOptions } from '../services/puppeteer';
 import { Request, Response } from 'express';
 const pNormalizeUrl = import("@esm2cjs/normalize-url");
 import { Crawled } from '../db/crawled';
 import { randomUUID } from 'crypto';
-import { JinaEmbeddingsAuthDTO } from '../shared/dto/jina-embeddings-auth';
-
-import { countGPTToken as estimateToken } from '../shared/utils/openai';
 import { CrawlerOptions, CrawlerOptionsHeaderOnly } from '../dto/scrapping-options';
-import { JinaEmbeddingsTokenAccount } from '../shared/db/jina-embeddings-token-account';
 import { DomainBlockade } from '../db/domain-blockade';
-import { FirebaseRoundTripChecker } from '../shared/services/firebase-roundtrip-checker';
 import { JSDomControl } from '../services/jsdom';
 import { FormattedPage, md5Hasher, SnapshotFormatter } from '../services/snapshot-formatter';
 
