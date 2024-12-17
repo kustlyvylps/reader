@@ -6,16 +6,13 @@ import {
     RPCHost, RPCReflection,
 } from 'civkit';
 import { singleton } from 'tsyringe';
-import { CloudHTTPv2, CloudTaskV2, Ctx, FirebaseStorageBucketControl, Logger, Param, RPCReflect } from '../shared';
 import _ from 'lodash';
 import { Request, Response } from 'express';
-import { JinaEmbeddingsAuthDTO } from '../shared/dto/jina-embeddings-auth';
 import robotsParser from 'robots-parser';
 import { DOMParser } from '@xmldom/xmldom';
 
 import { AdaptiveCrawlerOptions } from '../dto/adaptive-crawler-options';
 import { CrawlerOptions } from '../dto/scrapping-options';
-import { JinaEmbeddingsTokenAccount } from '../shared/db/jina-embeddings-token-account';
 import { AdaptiveCrawlTask, AdaptiveCrawlTaskStatus } from '../db/adaptive-crawl-task';
 import { getFunctions } from 'firebase-admin/functions';
 import { getFunctionUrl } from '../utils/get-function-url';
