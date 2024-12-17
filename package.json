@@ -11,5 +11,9 @@
     "devDependencies": {
         "firebase-tools": "^13.6.2",
         "typescript": "^5.1.6"
+    },
+    "scripts": {
+    "build": "cd backend/functions && npm install && npm run build",
+    "start": "npm run build && node backend/functions/build/index.js"
     }
 }
