@@ -1,10 +1,8 @@
 import { container, singleton } from 'tsyringe';
 import { AsyncService, marshalErrorLike } from 'civkit';
-import { Logger } from '../shared/services/logger';
 import { ExtendedSnapshot, PageSnapshot } from './puppeteer';
 import { Readability } from '@mozilla/readability';
 import TurndownService from 'turndown';
-import { Threaded } from '../shared/services/threaded';
 import type { ExtraScrappingOptions } from '../cloud-functions/crawler';
 
 const pLinkedom = import('linkedom');
